@@ -1,0 +1,21 @@
+Core RAG Types
+Naive RAG (Vanilla/Classic): The simplest form; it retrieves relevant documents once and generates an answer, often with minimal preprocessing.
+Advanced RAG: Improves upon the Naive approach by incorporating techniques like pre-retrieval optimization (query rewriting) and post-retrieval processing (reranking, filtering).
+Modular RAG: A flexible framework that allows rearranging components (modules) like retrieval, reranking, or reasoning to fit specific tasks, acting like a LEGO-like structure. 
+Meilisearch
+Meilisearch
+ +4
+Advanced & Specialized RAG Variants
+Agentic RAG: Uses autonomous agents to break down complex queries, plan searches, select tools, and iterate to improve results.
+Graph RAG: Leverages a knowledge graph to understand relationships between entities, making it better for complex, interconnected data.
+Corrective RAG (CRAG): Focuses on quality control by evaluating the retrieved documents and fixing them if they are irrelevant or low-quality before generation.
+Self-RAG: Enables the LLM to reflect on its own generation process, deciding when to retrieve, checking retrieved context, and verifying its own output.
+Hybrid RAG: Combines different retrieval methods—such as semantic (vector) search and keyword-based (sparse) search—to ensure both conceptual understanding and precise term matching.
+Multi-Hop RAG: Handles complex, multi-faceted questions by breaking them down into sub-questions and executing multiple, sequential retrieval steps.
+Multimodal RAG: Extends capabilities beyond text to include images, audio, and video in the retrieval and generation process.
+HyDE (Hypothetical Document Embeddings): Generates a hypothetical answer to a query first, then uses that hypothetical answer to retrieve actual, relevant documents.
+Adaptive RAG: A dynamic model that analyzes query complexity and chooses the best retrieval strategy—from simple to agentic—on the fly.
+Speculative RAG: Uses a smaller "drafter" model to quickly generate multiple candidates, which are then verified by a larger model, improving speed. 
+Meilisearch
+Meilisearch
+ +7
